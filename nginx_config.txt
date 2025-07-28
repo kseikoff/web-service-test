@@ -1,0 +1,13 @@
+server {
+    listen 80;
+    server_name web-service-test.online www.web-service-test.online;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:5000;
+    }
+}
+
+path=/etc/nginx/sites-available/test_server.conf
+sudo ln -s /etc/nginx/sites-available/test_server.conf /etc/nginx/sites-enabled/
+sudo systemctl restart nginx
