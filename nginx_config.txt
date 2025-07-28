@@ -8,6 +8,7 @@ server {
     }
 }
 
-path=/etc/nginx/sites-available/test_server.conf
+sudo nano /etc/nginx/sites-available/test_server.conf
 sudo ln -s /etc/nginx/sites-available/test_server.conf /etc/nginx/sites-enabled/
+sudo nginx -t
 sudo systemctl restart nginx
