@@ -5,7 +5,7 @@ import socket
 
 
 HOST = ''
-PORT = 80 # if no IP forwarding else 5000
+PORT = 80
 
 
 # def termination(signum, frame):
