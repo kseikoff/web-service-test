@@ -9,7 +9,7 @@ import yaml
 
 
 app = Flask(__name__)
-talisman = Talisman(app, force_https=False)
+talisman = Talisman(app)
 limiter = Limiter(
     get_remote_address,
     app=app,
